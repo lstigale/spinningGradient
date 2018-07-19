@@ -25,16 +25,16 @@ function randomGradient() {
 
   for (var i = 0; i < color.length; i++) {
     if (counter[i] == true) {
-      if (color[i] < 256) {
-        color[i] = color[i] + Math.floor( Math.random() * 10);
+      if (color[i] <= 246) {
+        color[i] = color[i] + Math.floor( (Math.random() * 10) + 1);
       }
       else {
         counter[i] = false;
       }
     }
     else {
-      if (color[i] > 0) {
-        color[i] = color[i] - Math.floor( Math.random() * 10);
+      if (color[i] >= 9) {
+        color[i] = color[i] - Math.floor( (Math.random() * 10) + 1);
       }
       else {
         counter[i] = true;
