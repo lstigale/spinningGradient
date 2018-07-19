@@ -42,7 +42,7 @@ function randomGradient() {
     }
 }
 
-  console.log(deg, r,g,b, r2,g2,b2);
-document.body.style.background = "linear-gradient(" + deg + "deg, rgb("+ r + ", " + g + ", " + b + "), rgb("+ r2 + ", " + g2 + ", " + b2 + "))";
-document.getElementById('colorNum').innerHTML = "linear-gradient(" + deg + "deg, rgb(" + r + ", " + g + ", " + b + "), rgb("+ r2 + ", " + g2 + ", " + b2 + "));";
+  console.log(deg, color[0] ,color[1] ,color[2] , color[3] ,color[4] ,color[5] );
+document.body.style.background = "linear-gradient(" + deg + "deg, rgb("+ color[0]  + ", " + color[1]  + ", " + color[2]  + "), rgb("+ color[3]  + ", " + color[4]  + ", " + color[5]  + "))";
+document.getElementById('colorNum').innerHTML = "linear-gradient(" + deg + "deg, rgb(" + color[0]  + ", " + color[1]  + ", " + color[2]  + "), rgb("+ color[3]  + ", " + color[4]  + ", " + color[5]  + "));";
 }
