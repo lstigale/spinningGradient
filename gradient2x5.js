@@ -16,7 +16,7 @@ var counter = [counterR = true,
 
 function randomGradient() {
 
-  if (deg == 360) {
+  if (deg === 360) {
     deg = 1;
   }
   else {
@@ -24,7 +24,7 @@ function randomGradient() {
   }
 
   for (var i = 0; i < color.length; i++) {
-    if (counter[i] == true) {
+    if (counter[i] === true) {
       if (color[i] <= 246) {
         color[i] = color[i] + Math.floor( (Math.random() * 10) + 1);
       }
